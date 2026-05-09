@@ -36,13 +36,13 @@
 
   <!-- MOBILE MENU -->
   <nav class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMobileMenu()">About</a>
-    <a href="#services" onclick="closeMobileMenu()">Services</a>
-    <a href="#why" onclick="closeMobileMenu()">Why Us</a>
-    <a href="#process" onclick="closeMobileMenu()">Get Started</a>
-    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
-    <a href="#" onclick="closeMobileMenu()">Client Login</a>
-    <a href="#contact" class="btn btn-gold" onclick="closeMobileMenu()">Open an Account</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#process">Get Started</a>
+    <a href="#contact">Contact</a>
+    <a href="#">Client Login</a>
+    <a href="#contact" class="btn btn-gold">Open an Account</a>
   </nav>
 
   <!-- ════════ 1. HERO ════════ -->
@@ -500,7 +500,7 @@
       <p>Whether you're taking your first step in investing or looking to optimize an established portfolio — our team is ready to be your long-term partner in the Philippine equity market.</p>
       <div class="cta-actions">
         <a href="mailto:info@cgsi.com.ph" class="btn btn-gold">Schedule a Free Consultation</a>
-        <a href="tel:+63281234567" class="btn btn-outline">Call Us: +63 (2) 8123 4567</a>
+        <a href="tel:+6328123-4567" class="btn btn-outline">Call Us: +63 (2) 8123-4567</a>
       </div>
       <div class="cta-microcopy">No commitment required · All conversations are confidential</div>
     </div>
@@ -553,7 +553,7 @@
         <h4>Contact Us</h4>
         <ul>
           <li><a href="mailto:info@cgsi.com.ph">info@cgsi.com.ph</a></li>
-          <li><a href="tel:+63281234567">+63 (2) 8123 4567</a></li>
+          <li><a href="tel:+6328123-4567">+63 (2) 8123-4567</a></li>
           <li><span>PSE Tower, 5th Avenue cor. 28th Street, BGC, Taguig City, Philippines</span></li>
         </ul>
       </div>
@@ -565,25 +565,37 @@
   </footer>
 
   <script>
-    // ── Sticky Navigation ──
+    // ── Sticky Navigation (rAF-throttled for performance) ──
     const header = document.getElementById('mainHeader');
+    let scrollTicking = false;
     window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 50);
-    });
+      if (!scrollTicking) {
+        requestAnimationFrame(() => {
+          header.classList.toggle('scrolled', window.scrollY > 50);
+          scrollTicking = false;
+        });
+        scrollTicking = true;
+      }
+    }, { passive: true });
 
     // ── Mobile Menu ──
     const hamburger = document.getElementById('hamburgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
 
     hamburger.addEventListener('click', () => {
       mobileMenu.classList.toggle('open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
 
-    function closeMobileMenu() {
-      mobileMenu.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+    // Close menu when any link inside it is clicked
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeMobileMenu);
+    });
 
     // Close mobile menu on outside click
     document.addEventListener('click', (e) => {
