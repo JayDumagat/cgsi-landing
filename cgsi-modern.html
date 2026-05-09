@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGSI — Institutional Equity Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13h-13L12 6.5z"/></svg>
+      CGSI
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="login">Client Login</a>
+      <a href="#" class="btn btn-gold">Open Account</a>
+    </div>
+  </header>
+
+  <!-- 1. HERO -->
+  <section class="section-hero">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop" alt="Financial District" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="eyebrow accent">More Than Brokers Who Partner In Your Future</div>
+        <h1 class="t-display">Secure Your Corporate Financial Future with Precision Execution</h1>
+        <p>Caballes-Go Securities is dedicated to providing comprehensive, client-focused equity brokerage solutions to institutional investors and corporate clients.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" class="btn btn-gold">Schedule Consultation</a>
+          <a href="#about" class="btn btn-outline">View Our Approach</a>
+        </div>
+      </div>
+      <div class="hero-carousel-wrapper">
+        <div class="hero-carousel-nav">
+          <button onclick="setHeroSlide(-1)">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <button onclick="setHeroSlide(1)">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </button>
+        </div>
+        <div class="hero-carousel-viewport">
+          <div class="hero-cards" id="heroCardsContainer">
+            <div class="hero-card">
+              <strong>PSE Participant</strong>
+              <p>Strictly compliant with PSE operational standards to ensure transparent execution.</p>
+            </div>
+            <div class="hero-card">
+              <strong>SEC Registered</strong>
+              <p>Operating under complete oversight to protect institutional assets.</p>
+            </div>
+            <div class="hero-card">
+              <strong>Deep Expertise</strong>
+              <p>Decades of experience delivering tailored corporate trading solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MARQUEE -->
+  <section class="section-marquee">
+    <div class="marquee-inner">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Deloitte_logo.svg/1024px-Deloitte_logo.svg.png" alt="Deloitte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/JPMorgan_Chase.svg/1024px-JPMorgan_Chase.svg.png" alt="JPMorgan">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bloomberg_logo.svg/1024px-Bloomberg_logo.svg.png" alt="Bloomberg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/1024px-Stripe_Logo%2C_revised_2016.svg.png" alt="Stripe">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1024px-Oracle_logo.svg.png" alt="Oracle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Deloitte_logo.svg/1024px-Deloitte_logo.svg.png" alt="Deloitte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/JPMorgan_Chase.svg/1024px-JPMorgan_Chase.svg.png" alt="JPMorgan">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Bloomberg_logo.svg/1024px-Bloomberg_logo.svg.png" alt="Bloomberg">
+    </div>
+  </section>
+
+  <!-- 3. STATS -->
+  <section class="section-stats">
+    <div class="stats-row">
+      <div class="stat-item">
+        <h3>60+</h3>
+        <p>Families Building Wealth</p>
+        <div class="stat-sub">Generational portfolio strategies designed for long-term growth.</div>
+      </div>
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Transactions Executed</p>
+        <div class="stat-sub">Flawless execution for high-stakes corporate advisory needs.</div>
+      </div>
+      <div class="stat-item">
+        <h3>15+</h3>
+        <p>Years of Leadership</p>
+        <div class="stat-sub">Navigating Philippine markets with deep institutional insight.</div>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Client Renewal Rate</p>
+        <div class="stat-sub">Trusted by our partners to continuously manage their assets year over year.</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 4. APPROACH TO INVESTING -->
+  <section id="about" class="section-about">
+    <div class="vp-header-split">
+      <div class="vp-header-left">
+        <div class="eyebrow accent">Our Philosophy</div>
+        <h2 class="t-h2">How We Approach Investing & Risk</h2>
+      </div>
+      <div class="vp-header-right">
+        <p>We believe that long-term financial security is built on transparency, disciplined risk management, and alignment of interests. Our framework is designed to protect your assets while capturing sustainable growth opportunities in dynamic markets.</p>
+      </div>
+    </div>
+    
+    <div class="vp-cards">
+      <div class="vp-card">
+        <div class="vp-icon">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l5 10H7l5-10z"/></svg>
+        </div>
+        <h4>Long-Term Horizon</h4>
+        <p>We filter out market noise to focus on fundamental value and multi-generational wealth preservation.</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3v18h18V3zm-2 16H5V5h14v14z"/></svg>
+        </div>
+        <h4>Risk-Adjusted Framework</h4>
+        <p>Every trade and advisory decision is measured against strict downside protection protocols.</p>
+      </div>
+      <div class="vp-card">
+        <div class="vp-icon">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        </div>
+        <h4>Fiduciary Relationship</h4>
+        <p>We treat every client relationship as a true partnership, aligning our success directly with yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SERVICES -->
+  <section id="services" class="section-services">
+    <div class="eyebrow" style="justify-content:center;">Our Services</div>
+    <h2 class="t-h2">Brokerage Services That Keep You Moving Forward</h2>
+    <p>We are strategically focused on achieving sustainable growth and adaptability within the market.</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop" alt="Advisory meeting">
+        <div class="service-card-body">
+          <h3>Institutional Advisory</h3>
+          <p>Comprehensive guidance for corporate clients and institutional investors.</p>
+          <a href="#" class="service-link">View Service &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Broker">
+        <div class="service-card-body">
+          <h3>Broker-Assisted Trading</h3>
+          <p>Personalized trade execution with deep market transparency.</p>
+          <a href="#" class="service-link">View Service &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" alt="Documents">
+        <div class="service-card-body">
+          <h3>Settlement & Custody</h3>
+          <p>Secure asset protection under strict SEC and PSE clearing standards.</p>
+          <a href="#" class="service-link">View Service &rarr;</a>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#" class="btn btn-gold">View All Services</a>
+  </section>
+
+  <!-- 5. QUOTE -->
+  <section class="section-quote">
+    <div class="eyebrow accent" style="justify-content:center;">Client Success</div>
+    <h2 class="t-h2" style="text-align:center; margin-bottom:60px;">Outcomes That Speak For Themselves</h2>
+    <div class="quote-grid">
+      <div class="quote-card">
+        <p>"CGSI's execution was flawless. Our corporate restructuring required precise block trading, and their guidance protected our asset value entirely."</p>
+        <div class="quote-author">
+          <div class="quote-avatar">RD</div>
+          <div>
+            <strong>Rodrigo Dela Cruz</strong>
+            <span>CFO, Manufacturing Corp</span>
+          </div>
+        </div>
+      </div>
+      <div class="quote-card">
+        <p>"We transitioned our institutional portfolio to CGSI last year. Their risk-adjusted framework resulted in an 18% portfolio growth while conservative guardrails remained intact."</p>
+        <div class="quote-author">
+          <div class="quote-avatar">AM</div>
+          <div>
+            <strong>Alicia Mendoza</strong>
+            <span>Director, Family Office</span>
+          </div>
+        </div>
+      </div>
+      <div class="quote-card">
+        <p>"Their deep knowledge of Philippine markets is unmatched. The advisory team helped us navigate a volatile Q3 and we renewed our contract without hesitation."</p>
+        <div class="quote-author">
+          <div class="quote-avatar">JL</div>
+          <div>
+            <strong>Jonathan Lee</strong>
+            <span>VP of Treasury</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HIGHLIGHT / PROOF -->
+  <section class="section-proof">
+    <div class="proof-gold">
+      <div class="proof-avatars">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="Advisor">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="Advisor">
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="Advisor">
+      </div>
+      <h3>95%</h3>
+      <p><strong>Of our institutional clients and corporate partners</strong> renewed their advisory relationship with us after year one.</p>
+    </div>
+    <div class="proof-img">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" alt="Client meeting">
+    </div>
+  </section>
+
+  <!-- 7. TEAM -->
+  <section id="team" class="section-team">
+    <div class="eyebrow" style="justify-content:center;">Our Team</div>
+    <h2 class="t-h2">The Experts Behind the Execution</h2>
+    
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Antonio Caballes"></div>
+        <div class="team-info">
+          <div>
+            <h4>Antonio Caballes</h4>
+            <p>Managing Director</p>
+            <div class="team-spec">
+              20+ years &middot; Institutional Strategy
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"True partnership means aligning our interests with yours."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Maria Go"></div>
+        <div class="team-info">
+          <div>
+            <h4>Maria Go</h4>
+            <p>Head of Advisory</p>
+            <div class="team-spec">
+              18 years &middot; Corporate Advisory
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"We navigate volatility so you can focus on growth."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="David Reyes"></div>
+        <div class="team-info">
+          <div>
+            <h4>David Reyes</h4>
+            <p>Chief Compliance Officer</p>
+            <div class="team-spec">
+              15 years &middot; Regulatory Compliance
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"Transparency and ethics are the foundation of our execution."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1bf98c?q=80&w=800&auto=format&fit=crop" alt="Isabella Tan"></div>
+        <div class="team-info">
+          <div>
+            <h4>Isabella Tan</h4>
+            <p>Head of Institutional Trading</p>
+            <div class="team-spec">
+              12 years &middot; Block Trading & Execution
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"Precision in execution is how we protect your alpha."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" alt="Mark Villar"></div>
+        <div class="team-info">
+          <div>
+            <h4>Mark Villar</h4>
+            <p>Lead Analyst</p>
+            <div class="team-spec">
+              10 years &middot; Equity Research
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"Data-driven insights that cut through market noise."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Roberto Santos"></div>
+        <div class="team-info">
+          <div>
+            <h4>Roberto Santos</h4>
+            <p>Settlement Operations</p>
+            <div class="team-spec">
+              15 years &middot; Clearing & Custody
+              <div style="margin-top: 12px; font-style: italic; color: var(--text-dark);">"Secure asset protection is our non-negotiable standard."</div>
+            </div>
+          </div>
+          <a href="#" class="team-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#" class="btn btn-gold">Meet the Team</a>
+  </section>
+
+  <!-- 8. INSIGHTS / NEWS -->
+  <section class="section-insights">
+    <div class="insights-header">
+      <div>
+        <div class="eyebrow accent">Market Insights</div>
+        <h2 class="t-h2">Market Knowledge, Simplified</h2>
+      </div>
+      <a href="#" class="btn btn-outline-dark">View All Updates</a>
+    </div>
+    
+    <div class="insights-grid">
+      <div class="insight-card">
+        <div class="insight-img"><img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=800&auto=format&fit=crop" alt="Market analysis"></div>
+        <div class="insight-info">
+          <div class="insight-meta">September 24, 2026</div>
+          <h3>Navigating the Philippine Equity Market in Q4</h3>
+          <p>An in-depth look at sectoral shifts and macroeconomic drivers influencing institutional allocations leading into the end of the year.</p>
+          <a href="#" class="btn btn-outline-dark" style="border:none; padding:0;">Read More &rarr;</a>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-img"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop" alt="Financial district"></div>
+        <div class="insight-info">
+          <div class="insight-meta">September 12, 2026</div>
+          <h3>SEC Regulatory Updates: What Corporate Treasurers Need to Know</h3>
+          <p>A comprehensive breakdown of the latest clearing and settlement guidelines impacting corporate portfolio management.</p>
+          <a href="#" class="btn btn-outline-dark" style="border:none; padding:0;">Read More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PROCESS / ONBOARDING -->
+  <section id="process" class="section-process">
+    <div class="eyebrow accent">Getting Started</div>
+    <h2 class="t-h2">How to open your account</h2>
+    <p>From initial consultation to your first trade, our streamlined process ensures full regulatory compliance.</p>
+    
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>Consultation</h4>
+        <p>Reach out to our team for a no-obligation conversation about your objectives.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>Application</h4>
+        <p>Submit KYC documentation. Our compliance team guides you through the steps.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>Funding</h4>
+        <p>Transfer funds through secure banking channels. Your broker confirms onboarding.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>Start Trading</h4>
+        <p>Place your first trade with direct support from your assigned broker.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA -->
+  <section id="contact" class="section-cta">
+    <div class="cta-bg">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2000&auto=format&fit=crop" alt="Office meeting">
+    </div>
+    <div class="cta-content">
+      <div class="eyebrow" style="justify-content:center; color:rgba(255,255,255,0.7);">Ready to start?</div>
+      <h2 class="t-h2">Get Clear Answers from Brokers Who Understand</h2>
+      <p>Whether you're managing a corporate treasury, rebalancing an institutional fund, or building personal wealth — our team is ready.</p>
+      <a href="#" class="btn btn-white">Get Your Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- 11. FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="margin-bottom:16px;">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13h-13L12 6.5z"/></svg>
+          CGSI
+        </a>
+        <p>A licensed broker dealer registered with the SEC and a Trading Participant of The Philippine Stock Exchange.</p>
+        <div class="footer-social">
+          <a href="#">in</a>
+          <a href="#">fb</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Market News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Advisory &amp; Execution</a></li>
+          <li><a href="#">Broker-Assisted Trading</a></li>
+          <li><a href="#">Research &amp; Insight</a></li>
+          <li><a href="#">Settlement &amp; Custody</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@cgsi.com.ph">info@cgsi.com.ph</a></li>
+          <li><a href="tel:+63281234567">+63 (2) 8123 4567</a></li>
+          <li><span style="color:var(--text-muted); font-size:13px; line-height:1.5; display:block; margin-top:8px;">PSE Tower, 5th Avenue cor. 28th Street, BGC, Taguig City</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Caballes-Go Securities, Inc. All rights reserved.</p>
+      <p>Investing involves risk. Operations are guided by the highest standards of client protection, compliance, ethics, and transparency.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky Navigation
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Hero Carousel
+    let currentHeroSlide = 0;
+    const heroCards = document.getElementById('heroCardsContainer');
+    const totalHeroCards = 3;
+    const visibleHeroCards = 2; // Desktop view shows 2
+    
+    function setHeroSlide(direction) {
+      const maxSlide = totalHeroCards - visibleHeroCards;
+      currentHeroSlide += direction;
+      
+      if (currentHeroSlide < 0) currentHeroSlide = 0;
+      if (currentHeroSlide > maxSlide) currentHeroSlide = maxSlide;
+      
+      // Calculate transform percentage and gap offset
+      // Since container shows 2 cards, shifting by 1 index means shifting by 50% of container + gap logic
+      // Transform by exactly -50% - 8px per slide step
+      heroCards.style.transform = `translateX(calc(${currentHeroSlide * -50}% - ${currentHeroSlide * 8}px))`;
+    }
+  </script>
+</body>
+</html>
