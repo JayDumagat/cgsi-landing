@@ -978,10 +978,8 @@ header.scrolled .hamburger span { background: var(--text-dark); }
 .team-card img {
   width: 100%;
   aspect-ratio: 4/5;
-  height: auto;
   object-fit: cover;
   object-position: center top;
-  filter: saturate(0.92) contrast(1.04);
 }
 
 .team-card-content {
